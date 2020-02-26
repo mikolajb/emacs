@@ -17,7 +17,7 @@
 ;;; Code:
 (deftheme dracula)
 
-
+
 ;;;; Configuration options:
 
 (defgroup dracula nil
@@ -316,6 +316,7 @@ read it before opening a new issue about your will.")
                (helm-ff-dotted-directory :foreground ,dracula-green :background ,dracula-bg :weight normal)
                (helm-ff-executable :foreground ,other-blue :background ,dracula-bg :weight normal)
                (helm-ff-file :foreground ,dracula-fg :background ,dracula-bg :weight normal)
+               (helm-ff-file-extension :foreground ,dracula-orange :background ,dracula-bg :weight normal)
                (helm-ff-invalid-symlink :foreground ,dracula-pink :background ,dracula-bg :weight bold)
                (helm-ff-prefix :foreground ,dracula-bg :background ,dracula-pink :weight normal)
                (helm-ff-symlink :foreground ,dracula-pink :background ,dracula-bg :weight bold)
@@ -327,7 +328,7 @@ read it before opening a new issue about your will.")
                (helm-grep-running :foreground ,dracula-green :background ,dracula-bg)
                (helm-header :foreground ,fg2 :background ,dracula-bg :underline nil :box nil)
                (helm-moccur-buffer :foreground ,dracula-green :background ,dracula-bg)
-               (helm-selection :background ,bg2 :underline nil)
+               (helm-selection :background ,bg4 :underline nil)
                (helm-selection-line :background ,bg2)
                (helm-separator :foreground ,dracula-purple :background ,dracula-bg)
                (helm-source-go-package-godoc-description :foreground ,dracula-yellow)
@@ -716,14 +717,14 @@ read it before opening a new issue about your will.")
                (tab-line-close-highlight :foreground ,dracula-red)
                ;; term
                (term :foreground ,dracula-fg :background ,dracula-bg)
-               (term-color-black :foreground ,dracula-bg :background ,dracula-comment)
-               (term-color-blue :foreground ,dracula-purple :background ,dracula-purple)
-               (term-color-cyan :foreground ,dracula-cyan :background ,dracula-cyan)
-               (term-color-green :foreground ,dracula-green :background ,dracula-green)
-               (term-color-magenta :foreground ,dracula-pink :background ,dracula-pink)
-               (term-color-red :foreground ,dracula-red :background ,dracula-red)
-               (term-color-white :foreground ,dracula-fg :background ,dracula-fg)
-               (term-color-yellow :foreground ,dracula-yellow :background ,dracula-yellow)
+               (term-color-black :foreground ,dracula-bg :background ,dracula-bg)
+               (term-color-blue :foreground ,other-blue :background ,dracula-bg)
+               (term-color-cyan :foreground ,dracula-cyan :background ,dracula-bg)
+               (term-color-green :foreground ,dracula-green :background ,dracula-bg)
+               (term-color-magenta :foreground ,dracula-pink :background ,dracula-bg)
+               (term-color-red :foreground ,dracula-red :background ,dracula-bg)
+               (term-color-white :foreground ,dracula-fg :background ,dracula-bg)
+               (term-color-yellow :foreground ,dracula-yellow :background ,dracula-bg)
                ;; undo-tree
                (undo-tree-visualizer-current-face :foreground ,dracula-orange)
                (undo-tree-visualizer-default-face :foreground ,fg2)
