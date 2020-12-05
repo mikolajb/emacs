@@ -763,8 +763,14 @@ read it before opening a new issue about your will.")
                (whitespace-tab :background ,bg2 :foreground ,dracula-comment)
                (whitespace-trailing :inherit trailing-whitespace)
                ;; yard-mode
-               (yard-tag-face :inherit font-lock-builtin-face)
-               (yard-directive-face :inherit font-lock-builtin-face))))
+               (yard-tag-face :inherit ,font-lock-builtin-face)
+               (yard-directive-face :inherit ,font-lock-builtin-face)
+               ;; go-test
+               (go-test--ok-face :foreground ,dracula-green)
+               (go-test--error-face :foreground ,dracula-red)
+               (go-test--warning-face :foreground ,dracula-yellow)
+               (go-test--pointer-face :foreground ,dracula-pink)
+               (go-test--standard-face :foreground ,dracula-orange))))
 
   (apply #'custom-theme-set-faces
          'dracula
